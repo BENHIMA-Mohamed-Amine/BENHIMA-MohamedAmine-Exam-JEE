@@ -6,4 +6,5 @@ import lombok.Data;
 public class CreditProfessionnelDTO extends CreditDTO {
     private String motif;
     private String raisonSociale;
+
 }

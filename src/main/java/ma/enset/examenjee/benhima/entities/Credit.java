@@ -4,10 +4,6 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import ma.enset.examenjee.benhima.entities.Client;
-import ma.enset.examenjee.benhima.entities.Remboursement;
-import org.springframework.data.annotation.Id;
-
 import java.time.LocalDate;
 import java.util.List;
 
@@ -16,7 +12,6 @@ import java.util.List;
 @DiscriminatorColumn(name = "credit_type")
 @Data @AllArgsConstructor @NoArgsConstructor
 public class Credit {
-    @jakarta.persistence.Id
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
