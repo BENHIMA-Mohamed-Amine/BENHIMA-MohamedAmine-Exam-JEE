@@ -1,4 +1,4 @@
-package ma.enset.examenjee;
+package ma.enset.examenjee.benhima;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class ExamenJeeApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(ExamenJeeApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(ExamenJeeApplication.class, args);
+    }
 
 }
