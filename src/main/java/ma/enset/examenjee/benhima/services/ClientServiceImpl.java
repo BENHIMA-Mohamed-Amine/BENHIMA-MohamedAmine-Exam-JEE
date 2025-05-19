@@ -1,5 +1,6 @@
 package ma.enset.examenjee.benhima.services;
 
+import lombok.AllArgsConstructor;
 import ma.enset.examenjee.benhima.dtos.ClientDTO;
 import ma.enset.examenjee.benhima.entities.Client;
 import ma.enset.examenjee.benhima.mappers.ClientMapper;
@@ -9,14 +10,10 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
+@AllArgsConstructor
 public class ClientServiceImpl implements ClientService {
     private final ClientRepository clientRepository;
     private final ClientMapper clientMapper;
-
-    public ClientServiceImpl(ClientRepository clientRepository, ClientMapper clientMapper) {
-        this.clientRepository = clientRepository;
-        this.clientMapper = clientMapper;
-    }
 
     @Override
     public ClientDTO addClient(ClientDTO clientDTO) {
